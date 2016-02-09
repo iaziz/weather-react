@@ -1,0 +1,20 @@
+
+
+@font-face {
+	font-family: corecircus;
+	src: url(fonts/corecircus.otf);
+	@include font-feature-settings("liga");
+
+	@include font-feature-settings("pnum", "kern" false);
+}
+
+
+.fontbase {
+	text-rendering: optimizelegibility !important;
+
+	-webkit-font-smoothing: antialiased !important;
+
+	font: {
+		family: 'corecircus';
+	}
+}
